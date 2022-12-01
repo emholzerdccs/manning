@@ -13,7 +13,7 @@ COPY --from=0 /usr/src/project/ROOT.war /usr/local/tomcat/webapps/ROOT.war
 COPY --from=0 /usr/src/project/SALESMANAGER.h2.db /usr/local/tomcat/
 COPY --from=0 /usr/src/project/files/ /usr/local/tomcat/files/
 
-ENV JAVA_OPTS="-Xmx1024m"
+# ENV JAVA_OPTS="-Xmx1024m"
 
 CMD ["catalina.sh", "run"]
 
